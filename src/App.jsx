@@ -1,7 +1,9 @@
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black to-gray-900 text-white">
-      <p className="text-lg">Tu setup está 🔥 y listo para crear magia.</p>
+    <div className="h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-center items-center">
+      <h1 className="text-5xl font-bold text-white animate-bounce">
+        👟 Catálogo 3D Iniciado 🔥
+      </h1>
     </div>
-  );
+  )
 }
