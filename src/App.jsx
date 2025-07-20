@@ -22,7 +22,7 @@ const modelos = [
   { nombre: "Nike Air Zoom", clave: "nike_air_zoom_pegasus_36", componente: <ModeloNikeZoom /> },
   { nombre: "Creator One", clave: "rtfkt_creator_one", componente: <ModeloCreatorOne /> },
   { nombre: "El Ronds Ring", clave: "vilya._elronds_ring", componente: <ModeloElrondsRing /> },
-  { nombre: "Gems Stone Necklace", clave: "gemstone_necklace", componente: <ModeloGemsStone /> },
+  // { nombre: "Gems Stone Necklace", clave: "gemstone_necklace", componente: <ModeloGemsStone /> },
 ];
 
 export default function App() {
