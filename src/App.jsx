@@ -9,10 +9,11 @@ import ModeloLeather from "./components/ModeloLeather";
 import ModeloNikeZoom from "./components/ModeloNikeZoom";
 import ModeloCreatorOne from "./components/ModeloCreatorOne";
 import ModeloElrondsRing from "./components/ModeloElrondsRing";
-// import ModeloGemsStone from "./components/ModeloGemsStone";
+import ModeloGemsStone from "./components/ModeloGemsStone";
 import ModeloGlasses from "./components/ModeloGlasses";
 import ModeloSciFi from "./components/ModeloSciFi";
 import ModeloWedge from "./components/ModeloWedge";
+import ModeloGeorgian from "./components/ModeloGeorgian";
 
 
 // usamos la misma base para todos: .glb y .png en /models/
@@ -21,7 +22,7 @@ const modelos = [
   { nombre: "Caterpillar", clave: "caterpillar_work_boot", componente: <ModeloCaterpillar /> },
   { nombre: "Nike Jordan", clave: "air_jordan_1", componente: <ModeloNike /> },
   { nombre: "Gold Ring", clave: "ring_gold_with_diamond", componente: <ModeloRing /> },
-  // { nombre: "Corset", clave: "corset", componente: <ModeloCorset /> },
+  { nombre: "Corset", clave: "corset", componente: <ModeloCorset /> },
   { nombre: "Leather", clave: "leather_shoes", componente: <ModeloLeather /> },
   { nombre: "Nike Air Zoom", clave: "nike_air_zoom_pegasus_36", componente: <ModeloNikeZoom /> },
   { nombre: "Creator One", clave: "rtfkt_creator_one", componente: <ModeloCreatorOne /> },
@@ -29,7 +30,8 @@ const modelos = [
   { nombre: "Lentes", clave: "glasses", componente: <ModeloGlasses /> },
   { nombre: "Sci-Fi Shoes", clave: "sci-fi_shoe", componente: <ModeloSciFi /> },
   { nombre: "Wedge Plateform", clave: "wedge_plateform_shoe", componente: <ModeloWedge /> },
-  // { nombre: "Gems Stone Necklace", clave: "gemstone_necklace", componente: <ModeloGemsStone /> },
+  { nombre: "Georgian Shoes", clave: "georgian_shoes", componente: <ModeloGeorgian /> },
+  { nombre: "Gems Stone Necklace", clave: "gemstone_necklace", componente: <ModeloGemsStone /> },
 ];
 
 export default function App() {

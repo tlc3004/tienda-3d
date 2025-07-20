@@ -5,9 +5,9 @@ export default function ModeloElrondsRing() {
   const { scene } = useGLTF("/models/vilya._elronds_ring-optimo.glb");
 
   return (
-    <Canvas camera={{ position: [0, 0, 1], fov: 50 }}>
-      <ambientLight intensity={500} />
-      <directionalLight position={[10, 10, 50]} />
+    <Canvas camera={{ position: [0, 0, 1], fov: 60 }}>
+      <ambientLight intensity={90} />
+      <directionalLight position={[100, 100, 100]} />
       <OrbitControls 
         autoRotate={true}
       enableZoom />
