@@ -1,0 +1,14 @@
+# Ignorar node_modules
+node_modules/
+
+# Archivos de construcción
+dist/
+build/
+
+# Configs sensibles
+.env
+.env.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
