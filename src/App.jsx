@@ -41,7 +41,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-coral-400 to-blue-500 p-6 text-white">
-      <h1 className="text-4xl font-bold text-center mb-15"> Confiture 3D </h1>
+      <h1 className="text-4xl font-bold text-center mb-15">Virtual Boutique 3D </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10 justify-center">
         {modelos.map((modelo) => (
