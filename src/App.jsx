@@ -3,7 +3,7 @@ import ModeloBota from "./components/ModeloBota";
 import ModeloNike from "./components/ModeloNike";
 import ModeloCaterpillar from "./components/ModeloCaterpillar";
 import ModeloRing from "./components/ModeloRing";
-import ModeloCorset from "./components/ModeloCorset";
+// import ModeloCorset from "./components/ModeloCorset";
 import ModalEscenario from "./components/ModalEscenario";
 import ModeloLeather from "./components/ModeloLeather";
 import ModeloNikeZoom from "./components/ModeloNikeZoom";
@@ -22,7 +22,7 @@ const modelos = [
   { nombre: "Caterpillar", clave: "caterpillar_work_boot", componente: <ModeloCaterpillar /> },
   { nombre: "Nike Jordan", clave: "air_jordan_1", componente: <ModeloNike /> },
   { nombre: "Gold Ring", clave: "ring_gold_with_diamond", componente: <ModeloRing /> },
-  { nombre: "Corset", clave: "corset", componente: <ModeloCorset /> },
+  // { nombre: "Corset", clave: "corset", componente: <ModeloCorset /> },
   { nombre: "Leather", clave: "leather_shoes", componente: <ModeloLeather /> },
   { nombre: "Nike Air Zoom", clave: "nike_air_zoom_pegasus_36", componente: <ModeloNikeZoom /> },
   { nombre: "Creator One", clave: "rtfkt_creator_one", componente: <ModeloCreatorOne /> },
