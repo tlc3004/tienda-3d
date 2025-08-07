@@ -15,7 +15,7 @@ import ModeloSciFi from "./components/ModeloSciFi";
 import ModeloWedge from "./components/ModeloWedge";
 import ModeloGeorgian from "./components/ModeloGeorgian";
 import { useAppData } from "./custom/useAppData";
-import { motion } from "framer-motion/client";
+import { motion } from "framer-motion";
 
 
 // usamos la misma base para todos: .glb y .png en /models/
@@ -41,7 +41,7 @@ export default function App() {
 
   const cerrarModal = () => setModalActual(null);
 
-  const { appData } = useAppData();
+  const  appData  = useAppData();
 
 
   
@@ -51,18 +51,19 @@ export default function App() {
 
   {/* Header con logos pequeños en fila */}
 <div className="flex flex-wrap justify-center items-center gap-4 mb-10">
-  {appData && appData.map((item) => (
-    <button
-      key={item.clave}
-      onClick={() => setModalActual(item.clave)}
+  {Array.isArray(appData) && appData.map((app, index) => (
+    <a
+      key={index}
+      href={app.url}      
+      title={app.nombre}
       className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden hover:scale-110 transition-transform"
     >
       <img
-        src={`/models/${item.clave}.png`}
-        alt={item.nombre}
+        src={app.logo}
+        alt={app.nombre}
         className="object-cover w-full h-full"
       />
-    </button>
+    </a>
   ))}
 </div>
 
