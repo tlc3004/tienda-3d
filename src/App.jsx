@@ -50,7 +50,7 @@ export default function App() {
     <motion.div className="min-h-screen bg-gradient-to-br from-yellow-100 via-coral-400 to-blue-500 p-6 text-white">
 
   {/* Header con logos pequeños en fila */}
-<div className="flex flex-wrap justify-center items-center gap-4 mb-10">
+<div className="flex flex-wrap justify-center items-center gap-10 mb-10">
   {Array.isArray(appData) && appData.map((app, index) => (
     <a
       key={index}
