@@ -14,6 +14,8 @@ import ModeloGlasses from "./components/ModeloGlasses";
 import ModeloSciFi from "./components/ModeloSciFi";
 import ModeloWedge from "./components/ModeloWedge";
 import ModeloGeorgian from "./components/ModeloGeorgian";
+import { useAppData } from "./custom/useAppData";
+import { motion } from "framer-motion/client";
 
 
 // usamos la misma base para todos: .glb y .png en /models/
@@ -39,8 +41,32 @@ export default function App() {
 
   const cerrarModal = () => setModalActual(null);
 
+  const { appData } = useAppData();
+
+
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-coral-400 to-blue-500 p-6 text-white">
+
+    <motion.div className="min-h-screen bg-gradient-to-br from-yellow-100 via-coral-400 to-blue-500 p-6 text-white">
+
+  {/* Header con logos pequeños en fila */}
+<div className="flex flex-wrap justify-center items-center gap-4 mb-10">
+  {appData && appData.map((item) => (
+    <button
+      key={item.clave}
+      onClick={() => setModalActual(item.clave)}
+      className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden hover:scale-110 transition-transform"
+    >
+      <img
+        src={`/models/${item.clave}.png`}
+        alt={item.nombre}
+        className="object-cover w-full h-full"
+      />
+    </button>
+  ))}
+</div>
+
+
       <h1 className="text-4xl font-bold text-center mb-20">Virtual Boutique 3D </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10 justify-center">
@@ -65,6 +91,6 @@ export default function App() {
           {modelos.find((m) => m.clave === modalActual)?.componente}
         </ModalEscenario>
       )}
-    </div>
+    </motion.div>
   );
 }
